@@ -7,7 +7,7 @@ using namespace std;
 
 void print(int *a){
 
-    for(int i=0;i<10;i++){
+    for(int i=0;i<LEN;i++){
         cout<<a[i]<<" ";
     }
 }
@@ -18,8 +18,14 @@ int main(){
 
     sort(a,a+10);
 
-
     print(a);
+    cout<<endl;
     cout<<"hello world\n"<<endl;
+
+
+    int item;
+    while(cin>>item){
+        cout << "hello:" <<item<<endl;
+    }
     return 0;
 }
